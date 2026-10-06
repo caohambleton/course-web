@@ -1,0 +1,142 @@
+html {
+  font-size: 12px;
+  font-family: "Clarity City", sans-serif;
+  background-color: #4242D4;
+  color: #E0F3FF;
+}
+
+:root {
+  --color-accent: #abe0ee;
+  --space-s: 0.5rem;
+  --space-m: 1rem;
+  --space-l: 2rem;
+}
+
+@media (minwidth: 400px){
+    #menu { 
+    display: flex; 
+    gap: var(--space-m); 
+    justify-content: flex-end; 
+    padding: var(--space-m); 
+    }
+}
+
+.menu-btn { 
+   display: block; 
+}
+
+#menu { 
+  display: none; 
+}
+
+#menu.open { 
+  display: flex; 
+  flex-direction: column; 
+}
+
+@media (min-width: 400px) {
+  .menu-btn { display: none; }
+  #menu { display: flex; flex-direction: row; }
+}
+
+
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--space-l);
+}
+
+.card { 
+  background: blue; 
+  padding: var(--space-m); 
+  border-radius: 12px; 
+}
+
+@media (min-width: 768px) {
+  #about { 
+    display: grid; 
+    grid-template-columns: 1fr 2fr; 
+    align-items: center; 
+    gap: var(--space-l); 
+  }
+}
+
+@media (max-width: 400px) {
+  .projects-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-l);
+  }
+}
+
+@media (min-width: 1280px) {
+  .projects-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: var(--space-l);
+  }
+}
+
+h1 {
+  font-size: clamp(2rem, 6vw, 3.5rem);
+  text-align: center;
+  margin: 0;
+  padding: 10px 0;
+  text-shadow: 3px 3px 1px black;
+}
+
+h2 {
+  font-size: 30px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+p,
+li {
+  font-size: 16px;
+}
+
+.centered{
+  text-align: center;
+}
+
+body {
+  width: 600px;
+  margin: 0 auto;
+  background-color: #02021F;
+  padding: 0 20px 20px 20px;
+  border: 5px solid white;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+label {
+  display: block;
+}
+
+section { 
+  padding: var(--space-l) var(--space-m);
+  max-width: 60rem;
+  margin: 0 auto; 
+}
+
+a { 
+  color: var(--color-accent); 
+}
+
+.button {
+  display: block;
+  background: var(--color-accent);
+  color: black;
+  padding: var(--space-s) var(--space-m);
+  border: 0;
+  border-radius: 8px;
+}

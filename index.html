@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Ana | Main</title>
+        <link href="styles/style.css" rel="stylesheet" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Clarity+City:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+       <header>
+            <button class="menu-btn" aria-expanded="false" aria-controls="menu">Menu</button>
+            <nav id="menu"> 
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>    
+            </nav>
+        </header>
+
+        <main>
+            <section id="about">
+                <div class="col1"> 
+                <h1>Hi, I am Ana</h1>
+                <p> 
+                    Donec ut librero sed accu vehicula ultricies a non tortor. Lorem
+                    ipsum dolor sit amet, consectetur adipisicing elit. Aenean ut
+                    gravida lorem. Ut turpis felis, pulvinar a semper sed, adipiscing id
+                    dolor.
+                </p>
+                </div>
+                <div class="col2">
+                <figure>
+                    <img
+                        src="me.JPG"
+                        alt="Ana signing her degree" 
+                        />
+                </figure>
+                </div>  
+            </section>
+
+            <section id="projects">
+                <h2>Projects</h2>
+                <figure>
+                    <img
+                        src="me.jpg"
+                        alt="Ana with her degree" 
+                        />
+                    <figcaption>Ana with her degree</figcaption>
+                </figure>
+
+                <h3>The Projects</h3>
+                <ul>
+                <li>German school website</li>
+                <li>Arctodus</li>
+                <li>Test_Site</li>
+                <li>Web_Course_Forms</li>
+                </ul>
+
+                <h3>Creations</h3>
+                <div class="projects-grid">
+                    <div class="card">
+                        <h3 class="centered">Project 1</h3>
+                        <figure>
+                            <img
+                                src="firma_titulo.jpg"
+                                alt="Ana signing her degree" 
+                                />
+                        </figure>
+
+                        <p> 
+                            Donec ut librero sed accu vehicula ultricies a non tortor. Lorem
+                            ipsum dolor sit amet, consectetur adipisicing elit. Aenean ut
+                            gravida lorem. Ut turpis felis, pulvinar a semper sed, adipiscing id
+                            dolor.
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <h3 class="centered">Project 2</h3>
+                        <figure>
+                            <img
+                                src="me.JPG"
+                                alt="Ana with her degree" 
+                                />
+                        </figure>
+
+                        <p> 
+                            Donec ut librero sed accu vehicula ultricies a non tortor. Lorem
+                            ipsum dolor sit amet, consectetur adipisicing elit. Aenean ut
+                            gravida lorem. Ut turpis felis, pulvinar a semper sed, adipiscing id
+                            dolor.
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <h3 class="centered">Project 3</h3>
+                        <figure>
+                            <img
+                                src="me.JPG"
+                                alt="Ana with her degree" 
+                                />
+                        </figure>
+
+                        <p> 
+                            Donec ut librero sed accu vehicula ultricies a non tortor. Lorem
+                            ipsum dolor sit amet, consectetur adipisicing elit. Aenean ut
+                            gravida lorem. Ut turpis felis, pulvinar a semper sed, adipiscing id
+                            dolor.
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <h3 class="centered">Project 4</h3>
+                        <figure>
+                            <img
+                                src="firma_titulo.jpg"
+                                alt="Ana signing her degree" 
+                                />
+                        </figure>
+
+                        <p> 
+                            Donec ut librero sed accu vehicula ultricies a non tortor. Lorem
+                            ipsum dolor sit amet, consectetur adipisicing elit. Aenean ut
+                            gravida lorem. Ut turpis felis, pulvinar a semper sed, adipiscing id
+                            dolor.
+                        </p>
+                    </div>
+                </div>
+
+                <h3>The Process</h3>
+                <ol>
+                    <li>Define the scope and objective of the project.</li>
+                    <li>Create the project folder.</li>
+                    <li>Do the project.</li>
+                </ol>
+                
+            </section>
+
+            <section id="contact">
+                <h2>Contact</h2>
+                <form>
+                <p>
+                    <label for="name">Name</label>
+                    <input id="name" name="name" type="text" required>
+                </p>
+                <p>
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" required>
+                </p>
+                <p>
+                    <label for="msg">Message</label>
+                    <textarea id="msg" name="msg" rows="4"></textarea>
+                    <button type="submit" class="button">Send</button>
+                </p>
+                </form>
+            </section>
+        </main>
+
+        <footer><p>© 2026 Ana</p></footer>
+
+        <script>
+            const btn = document.querySelector('.menu-btn');
+            const menu = document.querySelector('#menu');
+            
+            btn.addEventListener('click', () => {
+                const isOpen = menu.classList.toggle('open');
+                btn.setAttribute('aria-expanded', isOpen);
+            });
+        </script>
+    </body>
+</html>
