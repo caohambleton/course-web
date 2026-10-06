@@ -12,13 +12,13 @@ html {
   --space-l: 2rem;
 }
 
-@media (minwidth: 400px){
-    #menu { 
+@media (maxwidth: 400px){
+  #menu { 
     display: flex; 
     gap: var(--space-m); 
     justify-content: flex-end; 
     padding: var(--space-m); 
-    }
+  }
 }
 
 .menu-btn { 
@@ -38,7 +38,6 @@ html {
   .menu-btn { display: none; }
   #menu { display: flex; flex-direction: row; }
 }
-
 
 
 .projects-grid {
